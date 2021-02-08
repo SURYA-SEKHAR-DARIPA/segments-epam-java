@@ -17,13 +17,13 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class SegmentTest {
 
     @Test
-    public void testConstructor() {
+    void testConstructor() {
         new Segment(new Point(0, 0), new Point(1, 1));
         new Segment(new Point(-2, 2), new Point(-3, 1));
     }
 
     @Test
-    public void testConstructorSameStartEndCase() {
+    void testConstructorSameStartEndCase() {
         assertThrows(RuntimeException.class, () -> {
             Point p = new Point(3, 7);
             new Segment(p, p);
@@ -31,28 +31,28 @@ public class SegmentTest {
     }
 
     @Test
-    public void testConstructorEqualStartEndCase() {
+    void testConstructorEqualStartEndCase() {
         assertThrows(RuntimeException.class, () -> {
             new Segment(new Point(3, 7), new Point(3, 7));
         });
     }
 
     @Test
-    public void testConstructorNullStartCase() {
+    void testConstructorNullStartCase() {
         assertThrows(RuntimeException.class, () -> {
             new Segment(null, new Point(3, 7));
         });
     }
 
     @Test
-    public void testConstructorNullEndCase() {
+    void testConstructorNullEndCase() {
         assertThrows(RuntimeException.class, () -> {
             new Segment(new Point(3, 7), null);
         });
     }
 
     @Test
-    public void testConstructorNullStartEndCase() {
+    void testConstructorNullStartEndCase() {
         assertThrows(RuntimeException.class, () -> {
             new Segment(null, null);
         });
@@ -67,7 +67,7 @@ public class SegmentTest {
 
     @ParameterizedTest
     @MethodSource("middleTestCases")
-    private void testMiddle(final Point expected, final Segment segment) {
+    void testMiddle(final Point expected, final Segment segment) {
         final Point actual = segment.middle();
         assertEquals(expected.getX(), actual.getX(), 0.001);
         assertEquals(expected.getY(), actual.getY(), 0.001);
