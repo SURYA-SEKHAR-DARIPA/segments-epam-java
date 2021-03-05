@@ -1,21 +1,20 @@
 # Segments
 
-Given: class [`Point`](src/main/java/com/epam/rd/autotasks/segments/Point.java),
-skeleton of class [`Segment`](src/main/java/com/epam/rd/autotasks/segments/Segment.java).
+Given a class [`Point`](src/main/java/com/epam/rd/autotasks/segments/Point.java),
+and a skeleton of class [`Segment`](src/main/java/com/epam/rd/autotasks/segments/Segment.java), 
+implement `Segment` methods:
 
-Implement `Segment` methods:
-
-* Constructor, having start and end points as parameters.\
-    Ensure that created segment exists and is not degenerative, i.e. start and end of the segment is not the same point.
+* constructor with start and end points as parameters\
+  Ensure that a created segment exists and is not degenerative which means that the start and the end of the segment is not the same point.
 * `double length()`\
-    Return length of the segment.
+  Return length of the segment.
 * `Point middle()`\
-    Return a middle point of the segment.
+  Return a middle point of the segment.
 * `Point intersection(Segment another)`\
-    Return a point of intersection of the current segment and the given one.\
-    Return `null` if there is no such point.\
-    If segments are collinear, return `null`.\
-    *Note*: Intersection point must be on both segments.     
+  Return a point of the intersection of the current segment and the given one.\
+  Return `null` if there is no such point.\
+  Return `null` if segments are collinear.\
+  Please, note that intersection point must lay on both segments.
 
 Hints:
 * [Length reference](https://www.wikihow.com/Use-Distance-Formula-to-Find-the-Length-of-a-Line)
