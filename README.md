@@ -20,6 +20,7 @@ Please, implement the following methods of class [`Segment`](src/main/java/com/e
   Please, note that intersection point must lay on both segments.
 
 Class [`Point`](src/main/java/com/epam/rd/autotasks/segments/Point.java) is already there.
+
 Hints:
 * [Length reference](https://www.wikihow.com/Use-Distance-Formula-to-Find-the-Length-of-a-Line)
 * [Midpoint reference](https://www.wikihow.com/Find-the-Midpoint-of-a-Line-Segment#Use-the-Midpoint-Formula)
