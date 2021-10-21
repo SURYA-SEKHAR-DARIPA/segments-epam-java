@@ -1,8 +1,11 @@
 # Segments
 
-Given a class [`Point`](src/main/java/com/epam/rd/autotasks/segments/Point.java),
-and a skeleton of class [`Segment`](src/main/java/com/epam/rd/autotasks/segments/Segment.java), 
-implement `Segment` methods:
+The purpose of this exercise is to train you to work with classes and methods.
+
+Estimated workload of this exercise is _45 min_.
+
+### Description
+Please, implement the following methods of class [`Segment`](src/main/java/com/epam/rd/autotasks/segments/Segment.java): 
 
 * constructor with start and end points as parameters\
   Ensure that a created segment exists and is not degenerative which means that the start and the end of the segment is not the same point.
@@ -16,12 +19,13 @@ implement `Segment` methods:
   Return `null` if segments are collinear.\
   Please, note that intersection point must lay on both segments.
 
+Class [`Point`](src/main/java/com/epam/rd/autotasks/segments/Point.java) is already there.
 Hints:
 * [Length reference](https://www.wikihow.com/Use-Distance-Formula-to-Find-the-Length-of-a-Line)
 * [Midpoint reference](https://www.wikihow.com/Find-the-Midpoint-of-a-Line-Segment#Use-the-Midpoint-Formula)
 * [Intersection reference](https://en.wikipedia.org/wiki/Line–line_intersection)
  
-## Examples
+### Examples
 You may use [Main](src/test/java/com/epam/rd/autotasks/segments/Main.java) class to try your code.
 There are some examples below.
 
