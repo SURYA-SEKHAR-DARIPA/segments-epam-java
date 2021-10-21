@@ -8,7 +8,9 @@ Estimated workload of this exercise is _45 min_.
 Please, implement the following methods of class [`Segment`](src/main/java/com/epam/rd/autotasks/segments/Segment.java): 
 
 * constructor with start and end points as parameters\
-  Ensure that a created segment exists and is not degenerative which means that the start and the end of the segment is not the same point.
+  Ensure that a created segment exists and is not degenerative 
+  which means that the start and the end of the segment is not the same point.\
+  If it is, use `throw new IllegalArgumentException()` to raise an error.
 * `double length()`\
   Return length of the segment.
 * `Point middle()`\
